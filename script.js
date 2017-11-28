@@ -1,7 +1,7 @@
 var recipes = [];
 
 // fetches json recipes and ingredients array.
-fetch("./recipes.json")
+fetch("recipes.json")
 .then(function(response) 
 {
     return response.json();
@@ -11,21 +11,10 @@ fetch("./recipes.json")
     recipes = recipesJson;
 });
 
-console.log(recipes);
-
-
-
-
-/** funktion som hämtar alla recepet  */
-function getRecipes () {
-    
-
+$(document).ready(function () {
 
    
-}
+
+});
 
 
-
-
-
-/*  recepet funktion slutar här */
