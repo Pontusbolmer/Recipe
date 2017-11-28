@@ -13,3 +13,10 @@ fetch("./recipes.json")
 
 console.log(recipes);
 
+function getRecipes () {
+    var main = document.querySelector("#main");  
+    var productDiv = document.createElement("div"); 
+    productDiv.setAttribute("id", "div" + i);
+
+
+}
