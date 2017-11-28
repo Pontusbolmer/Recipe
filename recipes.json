@@ -1,0 +1,67 @@
+[
+    {
+        "recept": "julskinka",
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+    },
+    {
+        "recept": "janson",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "kötbullar",
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+
+    },
+    {
+        "recept": "kål",
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+    },
+    {
+        "recept": "rödbetssallad",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "sill",
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+
+    },
+    {
+        "recept": "prinskorv",
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+    },
+    {
+        "recept": "risalamalta",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "lutfisk",
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+
+    },
+    {
+        "recept": "doppigrytan",
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+    },
+    {
+        "recept": "revben",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "pepparkakor",
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+
+    }
+
+
+
+
+
+
+
+
+
+]
