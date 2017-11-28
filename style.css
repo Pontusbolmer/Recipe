@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Banner */
 #banner {
     background: 
@@ -8,6 +9,49 @@
       url(images/banner.jpg);
 }
 
+=======
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Header */
+
+#headermenu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    top: 0;
+    z-index: 99;
+}
+
+#headermenu a {
+    justify-content: flex-end;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+   
+}
+
+
+
+
+
+
+
+/* Header */
+
+=======
+>>>>>>> 43bd8eed097127734393cdc45ee3e1ced27df3e4
 /** Footer**/ 
 
 footer {
@@ -23,3 +67,4 @@ footer {
 
 }
 /** Footer sluter här **
+>>>>>>> bf6c47ec99969ea9fcc7ef49ca80860a1f0fd4c3
