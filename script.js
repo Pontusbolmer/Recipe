@@ -49,7 +49,15 @@ function loopAllIngredients(){
 
 //loops one targeted recipe and the ingredients
 function loopOneRecipe(){
-
+    $( "#addToShoppingList" ).click(function(){
+        $.each(recipes, function(i, val){
+            
+            $("#shoppingList").append("<h3>" + val.recept + "</h3>")
+            $("#shoppingList").append("<li>" + val.ingrediens + "</li>")
+            var x1 = data.recipes[0].recept;
+           console.log(x1);
+        });
+    });
 
 
 
