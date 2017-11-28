@@ -50,7 +50,7 @@ HEAD
 
 #headermenu {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;    
     background-color: #ff0000;
     position: fixed;
@@ -60,7 +60,8 @@ HEAD
     z-index: 99;
 }
 
-#headermenu a {
+#headermenu a, #socialmedia {
+    justify-content: flex-end;
     color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
