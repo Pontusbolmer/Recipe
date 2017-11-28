@@ -16,3 +16,10 @@ fetch("./recipes.json")
 });}
 
 
+function getRecipes () {
+    var main = document.querySelector("#main");  
+    var productDiv = document.createElement("div"); 
+    productDiv.setAttribute("id", "div" + i);
+
+
+}
