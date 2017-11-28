@@ -1,37 +1,28 @@
-<<<<<<< HEAD
-=======
 
-* {
-    box-sizing: border-box;
+/* Banner */
+#banner {
+    background: 
+    linear-gradient(
+       rgba(0, 0, 0, 0.2),
+       rgba(0, 0, 0, 0.2)
+    ),
+      url(images/banner.jpg);
+    background-size: 100%;
+    height: 80vh;
 
+    background-repeat:no-repeat;
+    /* background-size:contain; */
+    background-position:center;
 }
+
+
+
 
 body {
     padding: 0px;
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
 }
-
-
-
->>>>>>> cf64580290215c7e4a491100b6c33ba8439f9be5
-
-/* Banner */
-
-<<<<<<< HEAD
-
-
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Quicksand', sans-serif;
-}
-=======
-/* Banner */
-
-
->>>>>>> cf64580290215c7e4a491100b6c33ba8439f9be5
 
 
 /* Header */
@@ -56,7 +47,6 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
    
-   
 }
 
 
@@ -64,13 +54,8 @@ body {
 
 
 
-
-<<<<<<< HEAD
-
 /* Header */
 
-=======
->>>>>>> cf64580290215c7e4a491100b6c33ba8439f9be5
 /** Footer**/ 
 
 footer {
@@ -92,7 +77,3 @@ footer {
 
 }
 /** Footer sluter här **
-<<<<<<< HEAD
-
-=======
->>>>>>> cf64580290215c7e4a491100b6c33ba8439f9be5
