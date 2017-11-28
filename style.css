@@ -1,15 +1,17 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 * {
     box-sizing: border-box;
 
 }
 
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8c45d7abfbccec912cd3e5572fe6b601d8808057
+
+
 
 /* Banner */
 #banner {
@@ -27,16 +29,7 @@
       background-position:center;
 }
 
-=======
-<<<<<<< HEAD
->>>>>>> 8c45d7abfbccec912cd3e5572fe6b601d8808057
-=======
->>>>>>> 8c45d7abfbccec912cd3e5572fe6b601d8808057
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Quicksand', sans-serif;
-}
+/* Banner */
 
 
 
@@ -67,20 +60,11 @@ body {
 }
 
 
-/* Header */
+/* Header end*/
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 43bd8eed097127734393cdc45ee3e1ced27df3e4
-<<<<<<< HEAD
->>>>>>> 8c45d7abfbccec912cd3e5572fe6b601d8808057
-=======
->>>>>>> 8c45d7abfbccec912cd3e5572fe6b601d8808057
->>>>>>> bbb3f735c0eb9aa5dcdbfd12a0cea409cb5b561a
+
+
 /** Footer**/ 
 
 footer {
