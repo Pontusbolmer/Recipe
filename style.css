@@ -38,7 +38,7 @@ body {
 
 /* Header */
 
-=======
+
 /** Footer**/ 
 
 footer {
@@ -47,6 +47,12 @@ footer {
     height: 200px;
     color: white;
     font-family: 'Mountains of Christmas', cursive;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    
 }
 
 .about, ul{
