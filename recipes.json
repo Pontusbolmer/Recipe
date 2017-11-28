@@ -1,6 +1,3 @@
-
-//recept
-
 [
     {
         "recept": "julskinka",
@@ -38,33 +35,5 @@
         "recept": "risalamalta",
         "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
 
-    },
-    {
-        "recept": "lutfisk",
-        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
-
-    },
-    {
-        "recept": "doppigrytan",
-        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
-    },
-    {
-        "recept": "revben",
-        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
-
-    },
-    {
-        "recept": "pepparkakor",
-        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
-
     }
-
-
-
-
-
-
-
-
-
 ]

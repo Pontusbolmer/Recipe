@@ -1,10 +1,6 @@
-
-
-// Fetches recipes + ingredients and stores in recipes array
-function fetch(){
-
 var recipes = [];
 
+// fetches json recipes and ingredients array.
 fetch("./recipes.json")
 .then(function(response)
 {
@@ -13,6 +9,7 @@ fetch("./recipes.json")
 .then(function(recipesJson)
 {
     recipes = recipesJson;
-});}
+});
 
+console.log(recipes);
 
