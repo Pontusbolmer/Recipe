@@ -1,5 +1,42 @@
+<<<<<<< HEAD
 
 /* Banner */
+=======
+<<<<<<< HEAD
+=======
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+
+
+>>>>>>> cae36486265f2c8657649700393f75fc02051ced
+
+/* Banner */
+#banner {
+    background: 
+    linear-gradient(
+<<<<<<< HEAD
+       rgba(0, 0, 0, 0.2),
+       rgba(0, 0, 0, 0.2)
+    ),
+      url(images/banner.jpg);
+    background-size: 100%;
+    height: 80vh;
+
+    background-repeat:no-repeat;
+    /* background-size:contain; */
+    background-position:center;
+}
+>>>>>>> 73cba986e49fd71d590e1aaff205455ab8b3d707
 
 
 
@@ -9,6 +46,26 @@ body {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
 }
+<<<<<<< HEAD
+=======
+=======
+       rgba(0, 0, 0, 0.4),
+       rgba(0, 0, 0, 0.4)
+    ),
+      url(images/banner.jpg);
+      background-size: 100%;
+      height: 100vh;
+  
+      background-repeat:no-repeat;
+      /* background-size:contain; */
+      background-position:center;
+}
+
+/* Banner */
+
+
+>>>>>>> cae36486265f2c8657649700393f75fc02051ced
+>>>>>>> 73cba986e49fd71d590e1aaff205455ab8b3d707
 
 
 /* Header */
@@ -26,13 +83,11 @@ body {
 }
 
 #headermenu a {
-    justify-content: flex-end;
     color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
-   
    
 }
 
@@ -41,10 +96,18 @@ body {
 
 
 
+<<<<<<< HEAD
 
 
 /* Header */
 
+=======
+<<<<<<< HEAD
+/* Header */
+
+=======
+>>>>>>> cae36486265f2c8657649700393f75fc02051ced
+>>>>>>> 73cba986e49fd71d590e1aaff205455ab8b3d707
 /** Footer**/ 
 
 footer {
@@ -53,12 +116,6 @@ footer {
     height: 200px;
     color: white;
     font-family: 'Mountains of Christmas', cursive;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 0;
-    
 }
 
 .about, ul{
