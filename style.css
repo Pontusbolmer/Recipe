@@ -1,30 +1,13 @@
-<<<<<<< HEAD
+
 
 /* Banner */
-=======
-<<<<<<< HEAD
-=======
 
-* {
-    box-sizing: border-box;
-
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Mountains of Christmas', cursive;
-}
-
-
-
->>>>>>> cae36486265f2c8657649700393f75fc02051ced
 
 /* Banner */
 #banner {
     background: 
     linear-gradient(
-<<<<<<< HEAD
+
        rgba(0, 0, 0, 0.2),
        rgba(0, 0, 0, 0.2)
     ),
@@ -36,7 +19,6 @@ body {
     /* background-size:contain; */
     background-position:center;
 }
->>>>>>> 73cba986e49fd71d590e1aaff205455ab8b3d707
 
 
 
@@ -46,9 +28,8 @@ body {
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
 }
-<<<<<<< HEAD
-=======
-=======
+HEAD
+
        rgba(0, 0, 0, 0.4),
        rgba(0, 0, 0, 0.4)
     ),
@@ -63,9 +44,6 @@ body {
 
 /* Banner */
 
-
->>>>>>> cae36486265f2c8657649700393f75fc02051ced
->>>>>>> 73cba986e49fd71d590e1aaff205455ab8b3d707
 
 
 /* Header */
@@ -96,18 +74,15 @@ body {
 
 
 
-<<<<<<< HEAD
+
 
 
 /* Header */
 
-=======
-<<<<<<< HEAD
+
 /* Header */
 
-=======
->>>>>>> cae36486265f2c8657649700393f75fc02051ced
->>>>>>> 73cba986e49fd71d590e1aaff205455ab8b3d707
+
 /** Footer**/ 
 
 footer {
