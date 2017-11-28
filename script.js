@@ -48,7 +48,7 @@ function loopAllIngredients(){
 }
 
 //loops one targeted recipe and the ingredients
-function loopOnerecipe(){
+function loopOneRecipe(){
 
 
 
