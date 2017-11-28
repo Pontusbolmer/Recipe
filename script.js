@@ -6,7 +6,7 @@ function fetch(){
 var recipes = [];
 
 fetch("./recipes.json")
-.then(function(response)
+.then(function(response) 
 {
     return response.json();
 })
@@ -16,10 +16,19 @@ fetch("./recipes.json")
 });}
 
 
+
+
+
+/** funktion som hämtar alla recepet  */
 function getRecipes () {
-    var main = document.querySelector("#main");  
-    var productDiv = document.createElement("div"); 
-    productDiv.setAttribute("id", "div" + i);
+    
 
 
+   
 }
+
+
+
+
+
+/*  recepet funktion slutar här */
