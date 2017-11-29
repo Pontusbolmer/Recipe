@@ -80,29 +80,151 @@ function loopAllIngredients() {
 
 //loops one targeted recipe and the ingredients
 function loopOneRecipe(){
-
-    $("#container").append("<ul class='list2'></ul>")
     
-           
-                $.each(recipes, function(i, val){
-                    $(".list2").append("<h3>" + val.recept + "</h3>")
-                    $(".list2").append("<li>" + val.ingrediens + "</li>")
-                    console.log(val.recept);
+    //Funktion Skriva ut recept för att handla
+    $(".addJulskinka").click(function(){
+        julskinka();
+    });
+    $(".addJanson").click(function(){
+        janson();
+    });
+    $(".addKöttbullar").click(function(){
+        kötbullar();
+    });
+    $(".addKal").click(function(){
+        kal();
+    });
+    $(".addRödbetssallad").click(function(){
+        rödbetssallad();
+    });
+    $(".addSill").click(function(){
+        sill();
+    });
+    $(".addPrinskorv").click(function(){
+        prinskorv();
+    });
+    $(".addRisalamalta").click(function(){
+        risalamalta();
+    });
+
+
+    function julskinka(){
+   
+        $.each(recipes, function(i, val){
+            if(val.recept === "julskinka" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addJulskinka").hide();
+                
                 });
-
-
-                // försök på att lista även ingredienserna !oklar!
-                /*
-                $.each(recipes, function(i, val){
-                    $(".list2").append("<h3>" + val.recept + "</h3>")
-                    // $??(".li").each(val.ingrediens, function(i, val)) {
-                    //   $??.append("<li>" + val "</li>)
-                    // }
-                    $(".list2").append("<li>" + val.ingrediens + "</li>")
-                    console.log(val.recept);
-                });*/
-}
+                
+            }  
+        })
+    };
+    function janson(){
+        
+        $.each(recipes, function(i, val){
+            if(val.recept === "janson" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addJanson").hide();
+                });
+            }    
+        })
+    };
+    function kötbullar(){
+            
+        $.each(recipes, function(i, val){
+            if(val.recept === "köttbullar" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $("#shoppingList").append("<li>" + val.ingrediens  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addKöttbullar").hide();
+            }  
+        })
+    }
+    function kal(){
+        
+        $.each(recipes, function(i, val){
+            if(val.recept === "kål" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addKal").hide();
+                });
+            }  
+        })
+    }
+    function rödbetssallad(){
+        
+        $.each(recipes, function(i, val){
+            if(val.recept === "rödbetssallad" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addRödbetssallad").hide();
+                });
+            }  
+        })
+    }
+    function sill(){
+        
+        $.each(recipes, function(i, val){
+            if(val.recept === "sill" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addSill").hide();
+                });
+            }  
+        })
+    }
+    function prinskorv(){
+        
+        $.each(recipes, function(i, val){
+            if(val.recept === "prinskorv" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button>" + "Delete"  + "</button>" );
+                $(".addPrinskorv").hide();
+                });
+            }  
+        })
+    }
+    function risalamalta(){
+        
+        $.each(recipes, function(i, val){
+            if(val.recept === "risalamalta" ){
+                $("#shoppingList").append("<h2>" + val.recept  + "</h2>" );
+                $.each(val.ingrediens, function(i, val){
+                $("#shoppingList").append("<li>" + val  + "</li>" );
+                $("#shoppingList").append("<button class='deleteItem'>" + "Delete"  + "</button>" );
+                $(".deleteItem").click(function(){
+                    var itemtoRemove = ingrediens;
+                    val.ingrediens.splice($.inArray(itemtoRemove, val.ingrediens),1);
+                });
+                   
+              
+                $(".addRisalamalta").hide();
+                });
+            }  
+        })
+    }
 });
+
+
+//Funktion Skriva ut recept för att handla SLUT
+
+ 
+};
 
 
 
