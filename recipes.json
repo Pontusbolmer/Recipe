@@ -1,39 +1,65 @@
 [
     {
         "recept": "julskinka",
-        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ],
+        "image": "julskinka.jpg"
     },
     {
         "recept": "janson",
-        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
-
+        "ingrediens": [ "3 stora gula lökar",
+            "1 1/2 kg fast potatis",
+            "2 msk smör eller margarin (att steka i)",
+            "3 burkar ansjovisfiléer (à 100 g)",
+            "4 dl vispgrädde",
+            "2 dl mjölk",
+            "2 msk ströbröd",
+            "3 msk smör eller margarin (att klicka över)" ]
+            ,
+        "image": "janssons_frestelse.jpg",
+        "how": [ "Skiva löken och fräs den i ordentligt med smör i en stekpanna. När den blivit genomskinlig och gyllene är den klar.",
+        "Skala potatis och skär den i tunna strimlor för hand, på mandolin eller i en matberedare.",
+        "Smöra en ugnssäker form. Varva potatis, lök och längdhalverad ansjovis. Se till att det är potatis överst och i botten. Häll på grädde och ansjovisspad – det ska inte täcka potatisen utan finnas kvar cirka 1 centimeter kvar uppåt. Annars bubblar det över.",
+        "Fördela ut smörklickar på toppen och strössla över ströbröd. Eller använd Arlas fiffiga spraysmör som är som gjort för Janssons Frestelse. Grädda i nedre delen av ugnen i 225°C i cirka 1 timme. Har du varmluftsugn bör temperaturen ligga på cirka 180-200°C. 
+        Täck din Jansson med ett lager aluminiumfolie om den börjar få för mycket färg i ugnen." ]
     },
     {
         "recept": "kötbullar",
-        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ],
+        "image": "kottbullar.jpg"
 
     },
     {
         "recept": "kål",
-        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ],
+        "image": "langkal.jpg"
     },
     {
-        "recept": "rödbetssallad",
-        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
-
+        "recept": "lutfisk",
+        "ingrediens": [ "vit sås", 
+            "gröna ärter", 
+            "skirat smör", 
+            "skånsk senapssås", 
+            "salt", 
+            "grovt krossad kryddpeppar",
+            "grovt krossad svartpeppar"
+             ],
+        "image": "lutfisk.jpg"
     },
     {
         "recept": "sill",
-        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ],
+        "image": "sill.jpg"
 
     },
     {
         "recept": "prinskorv",
-        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ],
+        "image": "prinskorv.jpg"
     },
     {
         "recept": "risalamalta",
-        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ],
+        "image": "risalamalta.jpg"
 
     }
 ]
