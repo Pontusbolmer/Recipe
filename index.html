@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/5da05c8726.js"></script>
     <meta charset="UTF-8">
@@ -12,7 +13,7 @@
     
     
     
-    <title>Recipe</title>
+    <title>Julbordet.se</title>
 </head>
 <body>
 
@@ -20,26 +21,81 @@
                 <div w3-include-html="header.html" id="headermenu"></div>
             </div>
 
-            <div id="container">    
+        <div id="container">    
 
-            <div id="banner">
-                
+            <div id="banner"> 
+                <h2>Welcome!</h2>
             </div>
         
 
         </div>
 
 
-
-
-
-
-
-
-
-        <div id="footer">
-                <div w3-include-html="footer.html" id="footermenu"></div>
+        <div id="cardcontainer1">
+        <div class="card-deck">
+                <div class="card">
+                <img class="card-img-top" src="/images/Recept bilder/janssons_frestelse.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Janssons Frestelse</h4>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+                <div class="card">
+                <img class="card-img-top" src="/images/Recept bilder/lutfisk.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Lutfisk</h4>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+                <div class="card">
+                <img class="card-img-top" src="/images/Recept bilder/pepparkakor.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Pepparkakor</h4>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                </div>
+    
             </div>
+            </div>
+
+            <div id="cardcontainer2">
+            <div class="card-deck">
+                    <div class="card">
+                    <img class="card-img-top" src="/images/Recept bilder/janssons_frestelse.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Janssons Frestelse</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img class="card-img-top" src="/images/Recept bilder/lutfisk.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Lutfisk</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img class="card-img-top" src="/images/Recept bilder/pepparkakor.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Pepparkakor</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    </div>
+        
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div id="footer">
+                    <div w3-include-html="footer.html" id="footermenu"></div>
+                </div>
     
 <script> w3.includeHTML();</script>
 <script src="script.js"></script>
