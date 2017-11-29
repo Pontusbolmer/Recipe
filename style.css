@@ -200,4 +200,17 @@ input[type=mail] {
 }
 
 
-/** Footer ends **
+/** Footer ends **/
+
+/** Recipies **/
+
+#navigationbar {
+    padding: 40px 400px 10px 400px;
+}
+
+#receptcontainer {
+    padding: 40px 40px 10px 40px;
+}
+
+
+/** Recipies ends **/
