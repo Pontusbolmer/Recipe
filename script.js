@@ -15,8 +15,9 @@ var password = "password";
 
 
 $(document).ready(function () {
-
+    
     status();
+    addToBuy();
     
 //Här börjar login
     function status(){
@@ -248,5 +249,29 @@ function pepparkakor(){
         }  
     })
 }
+
+
+    function addToBuy(){
+        $(".handlaSill").click(function(){
+            $( "#recipecontainer" ).empty();
+            $("#recipecontainer").append("<ul id ='sillLoop'>" + "</ul>" );
+            sill();
+            $("#sillLoop").append("<a href='sill.html' class='btn btn-primary handlaSill' >Tillbaka" + "</a>" );
+        });
+
+        $(".handlaPepparkakor").click(function(){
+            $( "#recipecontainer" ).empty();
+            $("#recipecontainer").append("<ul id ='pepparkakorLoop'>" + "</ul>" );
+            pepparkakor();
+            $("#pepparkakorLoop").append("<a href='pepparkakor.html' class='btn btn-primary handlaPepparkakor' >Tillbaka" + "</a>" );
+        });
+        $(".handlaJulskinka").click(function(){
+            $( "#recipecontainer" ).empty();
+            $("#recipecontainer").append("<ul id ='julskinkaLoop'>" + "</ul>" );
+            julskinka();
+            $("#julskinkaLoop").append("<a href='julskinka.html' class='btn btn-primary handlaJulskinka' >Tillbaka" + "</a>" );
+        });
+    }
+
 
 });
