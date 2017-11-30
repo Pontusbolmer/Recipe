@@ -9,7 +9,6 @@ fetch("recipes.json")
         recipes = recipesJson;
     });
 
-
 $(document).ready(function () {
 
     var user = "test"
@@ -22,17 +21,23 @@ $(document).ready(function () {
     }
 
     $("#login").click(function () {
-        if ($(".user").val() == user && $("#password").val() == password) {
+        if ($("#username").val() == user && $("#password").val() == password) {
+            sessionStorage.ourUser = user;
+            console.log ("inloggad" + sessionStorage.ourUser);
             showMemberPage();
         } else {            
-            showForgotPage();
+            // showForgotPage();
         }
     });
 
     $("#logout").click(function () {
+        sessionStorage.removeItem("ourUser");
+        location.reload();
         showStartPage();
-    });
 
+        
+    });
+    
     function showMemberPage() {
         $("#linkRecepies").show();
         $("#linkIngredients").show();
@@ -42,12 +47,16 @@ $(document).ready(function () {
         $("#logout").show();
         $("#submit").hide();
         $("#wlcm").show();
-        $("#wlcm_login").hide();
-        
+        $("#wlcmLogin").hide();
         $("#username").hide();
         $("#password").hide(); 
-        sessionStorage.ourUser = $(".user").val();
+        console.log("showMemberPage");
+       
     };
+
+    function showForgotPage(){
+        alert("Oops, något gick snett");
+    }
 
     function showStartPage() {
         $("#banner").show();
