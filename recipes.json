@@ -35,5 +35,10 @@
         "recept": "risalamalta",
         "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
 
+    },
+    {
+        "recept": "pepparkakor",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
     }
 ]
