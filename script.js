@@ -21,46 +21,39 @@ $(document).ready(function () {
         showStartPage();
     }
 
-    $(".loginButton").click(function () {
-        if ($(".user").val() == user && $(".password").val() == password) {
+    $("#login").click(function () {
+        if ($(".user").val() == user && $("#password").val() == password) {
             showMemberPage();
         } else {            
             showForgotPage();
         }
     });
 
-    $(".logoutButton").click(function () {
-        showMainPage();
+    $("#logout").click(function () {
+        showStartPage();
     });
 
     function showMemberPage() {
         $("#linkRecepies").show();
         $("#linkIngredients").show();
-        $("#cardholder1").show();
-        $("#cardholder2").show();
-        $("#main").hide();
-        $("#member").show();
+        $("#cardcontainer1").show();
+        $("#cardcontainer2").show();
         $("#submit").hide();
         $("#logout").show();
+        $("#submit").hide();
+        $("#wlcm").show();
+        $("#wlcm_login").hide();
+        
         $("#username").hide();
         $("#password").hide(); 
         sessionStorage.ourUser = $(".user").val();
     };
 
-    function showForgotPage() {
-        $("#forgot").show();
-        $("#main").hide();
-        $("#member").hide();
-    };
-
-    function showMainPage() {
-        $("#forgot").hide();
-        $("#main").show();
-        $("#member").hide();
-    };
-
     function showStartPage() {
         $("#banner").show();
+        $("#logout").hide();
+        $("#wlcmLogin").show();
+        $("#wlcm").hide();
         $("#cardcontainer1").hide();
         $("#cardcontainer2").hide();
         $("#linkRecepies").hide();
