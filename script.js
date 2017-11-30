@@ -12,34 +12,77 @@ fetch("recipes.json")
 
 $(document).ready(function () {
 
-    $("#linkRecepies").hide();
-    $("#linkIngredients").hide();
-   
+    var user = "test"
+    var password = "password"
 
+    if (sessionStorage.ourUser != null) {
 
-    // Jonatan Funktion
+        showMemberPage();
 
-    $(".jansons-ingredienser").show();
+    } else {
 
+        showStartPage();
 
-    showStartPage();
+    }
 
-    $.each(recipes, function (i, val) {
-        if (val.recept === "janson") {
-            $(".jansons-ingredienser").append("<li>" + val.recept + "</li>")
-            $(".jansons-ingredienser").append("<li>" + val.ingrediens + "</li>")
-            $(".jansons-ingredienser").append("<li>" + val.image + "</li>")
+    $(".loginButton").click(function () {
+        if ($(".user").val() == user && $(".password").val() == password) {
+
+            showMemberPage();
+
+        } else {
+
+            showForgotPage();
         }
+
     });
 
+    $(".logoutButton").click(function () {
+        showMainPage();
+    });
 
+    function showMemberPage() {
+        $("#linkRecepies").show();
+        $("#linkIngredients").show();
+        $("#cardholder1").show();
+        $("#cardholder2").show();
+        
 
-    function showStartPage() {
-        $(".jansons-ingredienser").show();
-
+        $("#main").hide();
+        $("#member").show();
+        $("#submit").hide();
+        $("#logout").show();
+        $("#username").hide();
+        $("#password").hide();
+        $("#forgot").hide();
+        // $(".namn").text($(".user").val());  
+        sessionStorage.ourUser = $(".user").val();
 
     };
 
+    function showForgotPage() {
+        $("#forgot").show();
+        $("#main").hide();
+        $("#member").hide();
+    };
 
+    function showMainPage() {
+        $(".logoutButton").hide();
+        $("#forgot").hide();
+        $("#main").show();
+        $("#member").hide();
+        $(".loginButton").show();
+        $(".user").show();
+        $(".password").show();
+    };
+
+    function showStartPage() {
+        $(".logoutButton").hide();
+        $("#banner").show();
+        $("#cardcontainer1").hide();
+        $("#cardcontainer2").hide();
+        $("#linkRecepies").hide();
+        $("#linkIngredients").hide();
+    };
 
 });
