@@ -10,22 +10,16 @@ fetch("recipes.json")
     });
 
 
-    var user = "test"
-    var password = "password"
+var user = "test";
+var password = "password";
 
 
 $(document).ready(function () {
 
     status();
     
-   //Loopar ut ingredienser
-   
-
-
-
 //Här börjar login
     function status(){
-    
     if (sessionStorage.ourUser != null) {
         showMemberPage();
     } else {
@@ -35,21 +29,18 @@ $(document).ready(function () {
     $("#login").click(function () {
         if ($("#username").val() == user && $("#password").val() == password) {
             sessionStorage.ourUser = user;
-            console.log ("inloggad" + sessionStorage.ourUser);
-            showMemberPage();
-        }
+             showMemberPage(); }
     });
 
     $("#logout").click(function () {
         sessionStorage.removeItem("ourUser");
         location.reload();
         showStartPage();
-
-        
     });
     
     
     function recept(){
+
         pepparkakor();
         julskinka();
         janson();
@@ -60,8 +51,6 @@ $(document).ready(function () {
         sill();
         rodbetssallad();
         }
-
-
 
 
     function showMemberPage() {
@@ -93,7 +82,6 @@ $(document).ready(function () {
         
     };
     }
-        //Här slutar login
 
         //Här är compare funktionen i Ingredienser
         function compareIngrediens(){
@@ -110,7 +98,7 @@ $(document).ready(function () {
 
         }
         };
-        // Stänger Pontus
+        
 
 //Adderar till inköpslistan
 $(".addPepparkakor").click(function(){
@@ -140,8 +128,6 @@ $(".addPrinskorv").click(function(){
 $(".addRisalamalta").click(function(){
     risalamalta();
 });
-
-
 
 
 
@@ -262,12 +248,5 @@ function pepparkakor(){
         }  
     })
 }
-
-
-//Addera till inköpslistan SLUT//
-
-
-
-
 
 });
