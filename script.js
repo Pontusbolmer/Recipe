@@ -19,14 +19,14 @@ $(document).ready(function () {
     status();
     
     function status(){
-    if (sessionStorage.ourUser != null) {
-        showMemberPage();
-    } else {
-        showStartPage();
+        if (sessionStorage.ourUser != null) {
+            showMemberPage();
+        } else {
+            showStartPage();
+        }
     };
-    }
 
-    
+
     $("#login").click(function () {
         if ($("#username").val() == user && $("#password").val() == password) {
             sessionStorage.ourUser = user;
@@ -65,7 +65,17 @@ $(document).ready(function () {
         $("#wlcm").show();
         recept();
         compareIngrediens();
-         };
+        loopAlphabet();
+    };
+
+    function loopAlphabet(){
+
+        var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Å","Ä","Ö"];
+        
+          $.each(alphabet, function(i, val){
+              $(".pagination").append("<class='page-item'><a class='page-link'>" + val  + "</a></li" );
+          });
+      };
 
     function showStartPage() {
         $("#logout").hide();
@@ -76,7 +86,7 @@ $(document).ready(function () {
         $("#linkIngredients").hide();
         $("#banner").show();
         $("#wlcmLogin").show();
-    };
+     };
     
 
         //Här är compare funktionen i Ingredienser
@@ -91,7 +101,6 @@ $(document).ready(function () {
         $("#main").append("<ul></ul>");
         for(var key in lista) {
         $("#main ul").append("<li>" + key + " " + lista[key] + "x" + "</li>");
-
         }
         };
         
@@ -135,12 +144,11 @@ function julskinka(){
             $.each(val.ingrediens, function(i, val){
             $("#julskinkaLoop").append("<li>" + val  + "</li>" );
             $(".addJulskinka").hide();
-            
-            });
-            
-        }  
+        });
+        }
     })
 };
+
 function janson(){
     
     $.each(recipes, function(i, val){
@@ -166,7 +174,7 @@ function kotbullar(){
             });
         }  
     })
-}
+};
 function kal(){
     
     $.each(recipes, function(i, val){
