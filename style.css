@@ -205,7 +205,9 @@ input[type=mail] {
 /** Recipies **/
 
 #navigationbar {
-    padding: 40px 400px 10px 400px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 #receptcontainer {
