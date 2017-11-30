@@ -13,15 +13,7 @@ $(document).ready(function () {
     login();
     compareIngrediens();
    //Loopar ut ingredienser
-    pepparkakor();
-    julskinka();
-    janson();
-    kal();
-    kotbullar();
-    prinskorv();
-    risalamalta();
-    sill();
-    rodbetssallad();
+   recept();
 
 
 
@@ -52,6 +44,21 @@ $(document).ready(function () {
         
     });
     
+    function recept(){
+
+        pepparkakor();
+        julskinka();
+        janson();
+        kal();
+        kotbullar();
+        prinskorv();
+        risalamalta();
+        sill();
+        rodbetssallad();
+
+    };
+
+
     function showMemberPage() {
         $("#submit").hide();
         $("#wlcmLogin").hide();
