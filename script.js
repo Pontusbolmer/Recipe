@@ -44,7 +44,7 @@ $(document).ready(function () {
         
     });
     
-    function recept(){
+    
 
         pepparkakor();
         julskinka();
@@ -56,7 +56,7 @@ $(document).ready(function () {
         sill();
         rodbetssallad();
 
-    };
+
 
 
     function showMemberPage() {
