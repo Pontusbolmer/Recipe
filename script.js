@@ -16,25 +16,17 @@ $(document).ready(function () {
     var password = "password"
 
     if (sessionStorage.ourUser != null) {
-
         showMemberPage();
-
     } else {
-
         showStartPage();
-
     }
 
     $(".loginButton").click(function () {
         if ($(".user").val() == user && $(".password").val() == password) {
-
             showMemberPage();
-
-        } else {
-
+        } else {            
             showForgotPage();
         }
-
     });
 
     $(".logoutButton").click(function () {
@@ -46,18 +38,13 @@ $(document).ready(function () {
         $("#linkIngredients").show();
         $("#cardholder1").show();
         $("#cardholder2").show();
-        
-
         $("#main").hide();
         $("#member").show();
         $("#submit").hide();
         $("#logout").show();
         $("#username").hide();
-        $("#password").hide();
-        $("#forgot").hide();
-        // $(".namn").text($(".user").val());  
+        $("#password").hide(); 
         sessionStorage.ourUser = $(".user").val();
-
     };
 
     function showForgotPage() {
@@ -67,17 +54,12 @@ $(document).ready(function () {
     };
 
     function showMainPage() {
-        $(".logoutButton").hide();
         $("#forgot").hide();
         $("#main").show();
         $("#member").hide();
-        $(".loginButton").show();
-        $(".user").show();
-        $(".password").show();
     };
 
     function showStartPage() {
-        $(".logoutButton").hide();
         $("#banner").show();
         $("#cardcontainer1").hide();
         $("#cardcontainer2").hide();
