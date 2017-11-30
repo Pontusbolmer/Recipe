@@ -11,6 +11,9 @@ fetch("recipes.json")
 
 $(document).ready(function () {
 
+
+//Här börjar login
+
     var user = "test"
     var password = "password"
 
@@ -25,8 +28,6 @@ $(document).ready(function () {
             sessionStorage.ourUser = user;
             console.log ("inloggad" + sessionStorage.ourUser);
             showMemberPage();
-        } else {            
-            // showForgotPage();
         }
     });
 
@@ -54,10 +55,6 @@ $(document).ready(function () {
        
     };
 
-    function showForgotPage(){
-        alert("Oops, något gick snett");
-    }
-
     function showStartPage() {
         $("#banner").show();
         $("#logout").hide();
@@ -68,5 +65,19 @@ $(document).ready(function () {
         $("#linkRecepies").hide();
         $("#linkIngredients").hide();
     };
+//Här slutar login
 
+//Här är compare funktionen i Ingredienser
+
+var lista = {};
+for(var temp of recipes) {
+for(value of temp.ingrediens) {
+if(lista[value]) lista[value]++;
+else lista[value] = 1;
+}
+}
+$("#main").append("<ul></ul>");
+for(var key in lista) {
+$("#main ul").append("<li>" + key + " " + lista[key] + "x" + "</li>");
+}
 });
