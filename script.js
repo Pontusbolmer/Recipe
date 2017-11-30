@@ -18,14 +18,15 @@ $(document).ready(function () {
 
     status();
     
-//Här börjar login
     function status(){
     if (sessionStorage.ourUser != null) {
         showMemberPage();
     } else {
         showStartPage();
     };
+    }
 
+    
     $("#login").click(function () {
         if ($("#username").val() == user && $("#password").val() == password) {
             sessionStorage.ourUser = user;
@@ -37,7 +38,6 @@ $(document).ready(function () {
         location.reload();
         showStartPage();
     });
-    
     
     function recept(){
 
@@ -52,7 +52,6 @@ $(document).ready(function () {
         rodbetssallad();
         }
 
-
     function showMemberPage() {
         $("#submit").hide();
         $("#wlcmLogin").hide();
@@ -66,8 +65,7 @@ $(document).ready(function () {
         $("#wlcm").show();
         recept();
         compareIngrediens();
-               
-    };
+         };
 
     function showStartPage() {
         $("#logout").hide();
@@ -78,10 +76,8 @@ $(document).ready(function () {
         $("#linkIngredients").hide();
         $("#banner").show();
         $("#wlcmLogin").show();
-        
-        
     };
-    }
+    
 
         //Här är compare funktionen i Ingredienser
         function compareIngrediens(){
