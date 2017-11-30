@@ -11,6 +11,7 @@ fetch("recipes.json")
 
 $(document).ready(function () {
     login()
+    compareIngrediens()
 
 //Här börjar login
     function login(){
@@ -64,24 +65,24 @@ $(document).ready(function () {
         $("#linkIngredients").hide();
     };
     }
-//Här slutar login
+        //Här slutar login
 
-//Här är compare funktionen i Ingredienser
+        //Här är compare funktionen i Ingredienser
+        function compareIngrediens(){
+        var lista = {};
+        for(var temp of recipes) {
+        for(value of temp.ingrediens) {
+        if(lista[value]) lista[value]++;
+        else lista[value] = 1;
+        }
+        }
+        $("#main").append("<ul></ul>");
+        for(var key in lista) {
+        $("#main ul").append("<li>" + key + " " + lista[key] + "x" + "</li>");
 
-var lista = {};
-for(var temp of recipes) {
-for(value of temp.ingrediens) {
-if(lista[value]) lista[value]++;
-else lista[value] = 1;
-}
-}
-$("#main").append("<ul></ul>");
-for(var key in lista) {
-$("#main ul").append("<li>" + key + " " + lista[key] + "x" + "</li>");
-
-}
-
-// Stänger Pontus
+        }
+        };
+        // Stänger Pontus
 
 //Adderar till inköpslistan
 $(".addJulskinka").click(function(){
