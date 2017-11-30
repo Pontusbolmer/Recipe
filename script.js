@@ -53,28 +53,30 @@ $(document).ready(function () {
     });
     
     function showMemberPage() {
+        $("#submit").hide();
+        $("#wlcmLogin").hide();
+        $("#username").hide();
+        $("#password").hide(); 
         $("#linkRecepies").show();
         $("#linkIngredients").show();
         $("#cardcontainer1").show();
         $("#cardcontainer2").show();
-        $("#submit").hide();
         $("#logout").show();
-        $("#submit").hide();
         $("#wlcm").show();
-        $("#wlcmLogin").hide();
-        $("#username").hide();
-        $("#password").hide();        
+               
     };
 
     function showStartPage() {
-        $("#banner").show();
         $("#logout").hide();
-        $("#wlcmLogin").show();
         $("#wlcm").hide();
         $("#cardcontainer1").hide();
         $("#cardcontainer2").hide();
         $("#linkRecepies").hide();
         $("#linkIngredients").hide();
+        $("#banner").show();
+        $("#wlcmLogin").show();
+        
+        
     };
     }
         //Här slutar login
