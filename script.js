@@ -10,10 +10,10 @@ fetch("recipes.json")
     });
 
 $(document).ready(function () {
-
+    login()
 
 //Här börjar login
-
+    function login(){
     var user = "test"
     var password = "password"
 
@@ -63,6 +63,7 @@ $(document).ready(function () {
         $("#linkRecepies").hide();
         $("#linkIngredients").hide();
     };
+    }
 //Här slutar login
 
 //Här är compare funktionen i Ingredienser
