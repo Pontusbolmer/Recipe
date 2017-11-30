@@ -9,19 +9,23 @@ fetch("recipes.json")
         recipes = recipesJson;
     });
 
+
+    var user = "test"
+    var password = "password"
+
+
 $(document).ready(function () {
-    login();
-    compareIngrediens();
+
+    status();
+    
    //Loopar ut ingredienser
-   recept();
+   
 
 
 
 //Här börjar login
-    function login(){
-    var user = "test"
-    var password = "password"
-
+    function status(){
+    
     if (sessionStorage.ourUser != null) {
         showMemberPage();
     } else {
@@ -45,7 +49,7 @@ $(document).ready(function () {
     });
     
     
-
+    function recept(){
         pepparkakor();
         julskinka();
         janson();
@@ -55,6 +59,7 @@ $(document).ready(function () {
         risalamalta();
         sill();
         rodbetssallad();
+        }
 
 
 
@@ -70,6 +75,8 @@ $(document).ready(function () {
         $("#cardcontainer2").show();
         $("#logout").show();
         $("#wlcm").show();
+        recept();
+        compareIngrediens();
                
     };
 
