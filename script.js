@@ -14,13 +14,13 @@ $(document).ready(function () {
     compareIngrediens();
    //Loopar ut ingredienser
     pepparkakor();
-    janson();
     julskinka();
+    janson();
     kal();
     kotbullar();
     prinskorv();
     risalamalta();
-    sil();
+    sill();
     rodbetssallad();
 
 
@@ -126,14 +126,16 @@ $(".addRisalamalta").click(function(){
 });
 
 
+
+
+
 function julskinka(){
 
     $.each(recipes, function(i, val){
         if(val.recept === "julskinka" ){
-            $("#julskinkaLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#julskinkaLoop").append("<h2>" + val.recept  + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#julskinkaLoop").append("<li>" + val  + "</li>" );
-            $("#julskinkaLoop").append("<button>" + "Delete"  + "</button>" );
             $(".addJulskinka").hide();
             
             });
@@ -145,7 +147,7 @@ function janson(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "janson" ){
-            $("#jansonLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#jansonLoop").append("<h2>" + val.recept + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#jansonLoop").append("<li>" + val  + "</li>" );
             $("#jansonLoop").append("<button>" + "Delete"  + "</button>" );
@@ -154,11 +156,11 @@ function janson(){
         }    
     })
 };
-function kötbullar(){
+function kotbullar(){
         
     $.each(recipes, function(i, val){
         if(val.recept === "köttbullar" ){
-            $("#kottbullarLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#kottbullarLoop").append("<h2>" + val.recept  + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#kottbullarLoop").append("<li>" + val  + "</li>" );
             $("#kottbullarLoop").append("<button>" + "Delete"  + "</button>" );
@@ -171,7 +173,7 @@ function kal(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "kål" ){
-            $("#kalLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#kalLoop").append("<h2>" + val.recept + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#kalLoop").append("<li>" + val  + "</li>" );
             $("#kalLoop").append("<button>" + "Delete"  + "</button>" );
@@ -184,7 +186,7 @@ function rodbetssallad(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "rödbetssallad" ){
-            $("#rödbetssallad").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#rödbetssallad").append("<h2>" + val.recept  + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#rödbetssallad").append("<li>" + val  + "</li>" );
             $("#rödbetssallad").append("<button>" + "Delete"  + "</button>" );
@@ -197,10 +199,9 @@ function sill(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "sill" ){
-            $("#sillLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#sillLoop").append("<h2>" + val.recept + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#sillLoop").append("<li>" + val  + "</li>" );
-            $("#sillLoop").append("<button>" + "Delete"  + "</button>" );
             $(".addSill").hide();
             });
         }  
@@ -210,7 +211,7 @@ function prinskorv(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "prinskorv" ){
-            $("#prinskorvLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#prinskorvLoop").append("<h2>" + val.recept  + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#prinskorvLoop").append("<li>" + val  + "</li>" );
             $("#prinskorvLoop").append("<button>" + "Delete"  + "</button>" );
@@ -223,7 +224,7 @@ function risalamalta(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "risalamalta" ){
-            $("#risalamaltaLoop").append("<h2>" + val.recept.toUperCase()  + "</h2>" );
+            $("#risalamaltaLoop").append("<h2>" + val.recept  + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#risalamaltaLoop").append("<li>" + val  + "</li>" );
             $("#risalamaltaLoop").append("<button class='deleteItem'>" + "Delete"  + "</button>" );
@@ -237,7 +238,7 @@ function pepparkakor(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "pepparkakor" ){
-            $("#pepparkakorLoop").append("<h2>" + val.recept.toUpperCase()  + "</h2>" );
+            $("#pepparkakorLoop").append("<h2>" + val.recept  + "</h2>" );
             $.each(val.ingrediens, function(i, val){
             $("#pepparkakorLoop").append("<li>" + val  + "</li>" );
             $(".addPepparkakor").hide();
