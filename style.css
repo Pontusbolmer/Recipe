@@ -191,17 +191,6 @@ input[type=mail] {
 }
 
 
-#myFooter .btn {
-    color: white;
-    background-color: #d84b6b;
-    border-radius: 20px;
-    border: none;
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    line-height: 25px;
-}
 
 
 /** Footer ends **/
@@ -220,6 +209,38 @@ input[type=mail] {
 
 
 /** Recipies ends **/
+
+
+/** Pepparkakor.html **/
+
+#recipecontainer {
+    padding: 100px;
+    display: flex;
+
+}
+
+#recipemain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recipemain p {
+   
+}
+
+#ingredientlist {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+#recipepicture {
+    border: 2px;
+}
+
+/** Pepparkakor.html ends **/ 
+
 
 /** Ingredient page **/
 
