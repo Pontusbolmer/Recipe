@@ -242,3 +242,15 @@ input[type=mail] {
 /** Pepparkakor.html ends **/ 
 
 
+/** Ingredient page **/
+
+#main {
+    text-align: center;
+    padding: 10vh;
+}
+
+#main, ul {
+    list-style: none;
+}
+
+/** Ingredient page slutar **/
