@@ -245,8 +245,17 @@ input[type=mail] {
 /** Ingredient page **/
 
 #main {
+    background: url(images/banner.jpg);
     text-align: center;
     padding: 10vh;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main, ul {
