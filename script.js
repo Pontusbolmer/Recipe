@@ -17,7 +17,7 @@ var password = "password";
 $(document).ready(function () {
     
     status();
-    addToBuy();
+    
     
     function status(){
         if (sessionStorage.ourUser != null) {
@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
     
     function recept(){
-
+        addToBuy();
         pepparkakor();
         julskinka();
         janson();
