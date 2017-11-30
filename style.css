@@ -78,6 +78,10 @@ body {
     width: 100%;
 }
 
+#login i {
+    font-size: 25px;
+}
+
 input[type=mail] {
     width: 10px;
  }
