@@ -12,6 +12,10 @@ fetch("recipes.json")
 
 $(document).ready(function () {
 
+    $("#linkRecepies").hide();
+    $("#linkIngredients").hide();
+   
+
 
     // Jonatan Funktion
 
